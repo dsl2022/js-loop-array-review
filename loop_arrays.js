@@ -2,7 +2,8 @@
 function removeLastElement(arr) {
   // Prompt: Write a function that takes an array as input and removes the last element using the pop method.
   // Return the modified array.
-  
+  arr.pop()
+  return arr
   // Write your code here
 }
 
@@ -10,7 +11,8 @@ function removeLastElement(arr) {
 function removeFirstElement(arr) {
   // Prompt: Write a function that takes an array as input and removes the first element using the shift method.
   // Return the modified array.
-  
+  arr.shift()
+  return arr
   // Write your code here
 }
 
@@ -18,7 +20,8 @@ function removeFirstElement(arr) {
 function addElementToEnd(arr, value) {
   // Prompt: Write a function that takes an array and a value as input and adds the value to the end of the array using the push method.
   // Return the modified array.
-  
+  arr.push(value)
+  return arr
   // Write your code here
 }
 
@@ -26,7 +29,8 @@ function addElementToEnd(arr, value) {
 function addElementToStart(arr, value) {
   // Prompt: Write a function that takes an array and a value as input and adds the value to the beginning of the array using the unshift method.
   // Return the modified array.
-  
+  arr.unshift(value)
+  return arr
   // Write your code here
 }
 
@@ -34,7 +38,11 @@ function addElementToStart(arr, value) {
 function reverseArray(arr) {
   // Prompt: Write a function that takes an array as input and returns a new array with the elements reversed using a loop.
   // Return the reversed array.
-  
+  const arrReversed = []
+  for(let i =arr.length-1;i>=0;i--){
+    arrReversed.push(arr[i])
+  }
+  return arrReversed
   // Write your code here
 }
 
